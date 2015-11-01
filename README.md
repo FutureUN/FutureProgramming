@@ -7,7 +7,7 @@ Powered by [Jimmy Pulido](https://github.com/jiapulidoar) - [Sebstian Chaves] (h
 ##Installation
 
 
-    $ git clone https://github.com/adamantwharf/FutureProgramming.git
+    $ git clone https://github.com/FutureUN/FutureProgramming.git
     $ cd FutureProgramming
 
 ##Successions
