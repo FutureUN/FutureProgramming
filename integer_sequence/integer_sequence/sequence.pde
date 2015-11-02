@@ -86,6 +86,7 @@ abstract class Sequence {
       float xpos1=  map (nth, 0, n, 0, width);
       nth ++;
       float ypos1 = map ( seq[i], 0, seq[n-1], height, 0);
+      fill ( 255);
       ellipse ( xpos1, ypos1, 6, 6);
       stroke (255);
       if ( i == 0)
@@ -119,7 +120,7 @@ abstract class Sequence {
     float y1 = map (seq[1], 0, seq[n-1], height , 0);
     float x2 = map (nth + 2, 0, n, 0, width);
     float y2 = map (seq[2], 0, seq[n-1], height , 0);
-    stroke ( 255,0,0);
+    stroke ( 255);
     curve (x,y,x,y,x1,y1,x2,y2); 
     nth ++;
     for ( int i = 1; i < n - 2; i ++)
@@ -131,7 +132,7 @@ abstract class Sequence {
       float x3 = map (nth + 2, 0, n, 0, width);
       float y3 = map (seq[i + 2], 0, seq[n-1], height , 0);
       nth ++;
-      stroke (255,0,0);
+      stroke (255);
       curve ( x,y,x1,y1,x2,y2,x3,y3);
       
       x = x1;
@@ -142,7 +143,8 @@ abstract class Sequence {
      y1 = map (seq[n-2], 0, seq[n-1], height , 0);
      x2 = map (nth + 1, 0, n, 0, width);
      y2 = map (seq[n-1], 0, seq[n-1], height , 0);
-    stroke ( 255,0,0);
+   
+    stroke ( 255);
     curve ( x,y,x1,y1,x2,y2,x2,y2);
    }   
    

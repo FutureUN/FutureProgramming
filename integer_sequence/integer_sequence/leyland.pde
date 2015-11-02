@@ -12,11 +12,11 @@ class Leyland extends Sequence{
    }
   String author()
   {
-    return "noname"; 
+    return "No-Name" ;
   }
   String description()
   {
-    return "something";
+    return "Numbers of the form x^y + y^x for any positive integer.";
   }
   
   int py;
@@ -35,7 +35,7 @@ class Leyland extends Sequence{
             if(! v.hasValue(m) )
               v.append(m);
         }
-     println(v);
+     
      v.sort();
    //  println(v);
      for(int i=0;i<nu;i++)

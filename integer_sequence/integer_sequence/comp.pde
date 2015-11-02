@@ -1,11 +1,11 @@
 class Composite extends Sequence {
    String author()
   {
-     return "noname"; 
+     return "No-Name"; 
   }
   String description()
   {
-    return "An abundant number is a number for wich the sum of its proper divisors is grater than the number itself";
+    return "A composite number is a positive integer that has at least one positive divisor other than one or the number itself. In other words, a composite number is any integer greater than one that is not a prime number.";
   }
   
 IntList arr;
@@ -69,7 +69,7 @@ void display(int n )
     {
       fill (0);
       if ( ! is_comp(sq)){ 
-         fill (100,50, map ( sq , 0 , n , 0 , 100));
+         fill (280  ,50, map ( sq , 0 , n , 0 , 100));
        }
       rect ( xpos, ypos, base, h);
       //println ( xpos + "   " + ypos);
