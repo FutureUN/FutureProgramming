@@ -40,13 +40,6 @@ int compute ( int n ){
   }
   return nth;
 }
-int [] n_array (int n )
-{ 
-  int arr [] = new int[n];
-  for ( int i = 0; i < n ; i ++)
-    arr [i]= compute (i+1);
-  return arr;
-}
 
 void display(int n )
 {
@@ -61,7 +54,7 @@ void display(int n )
   if ( s%2 == 1){
     base = sqrt(width * height /n);
     h = base;
-    row = sqrt (n); 
+    row =  column = sqrt (n) ; 
   }
   if ( s % 2 == 0){
     base = (float )width / column;

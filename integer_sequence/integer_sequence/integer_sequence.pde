@@ -1,19 +1,26 @@
 
 // Object declaration
 Sequence sequence;
-int n = 12;
+int n = 10;
+color value = 0;
 void setup() {
-  size(720, 640);
+  size(700,700 );
   colorMode(HSB,360,100,100,100);
   // Object init
-  sequence = new Composite();
-  //println(sequence.);
+  sequence = new Leyland();
+}
+
+void mouseMoved() {
+  value = (value + 1) % 360;
 }
 
 void draw() {
-  noLoop();
+ // noLoop();
   background(0);
-  //object use
-  //sequence.display(n);
-  sequence.lineChart(n);
+  sequence.setHue(value);
+  println ( sequence.hue );
+//   sequence.lineChart(n);
+ // sequence.curveFitting(n);
+  //sequence.barChart(n);
+  sequence.display(n);
 }
