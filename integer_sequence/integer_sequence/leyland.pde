@@ -85,7 +85,7 @@ class Leyland extends Sequence{
 
       //noStroke();
       stroke(hue,100,30);
-      float x = width/2+px/(a/b);
+      float x = width/2+  px/(a/b);
       float y = height/2+py/(a/b);
       
       if(y>height)

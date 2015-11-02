@@ -18,9 +18,9 @@ void draw() {
  // noLoop();
   background(0);
   sequence.setHue(value);
-  println ( sequence.hue );
-//   sequence.lineChart(n);
- // sequence.curveFitting(n);
-  //sequence.barChart(n);
-  sequence.display(n);
+  //println ( sequence.huehue );
+   sequence.lineChart(n);
+  sequence.curveFitting(n);
+  sequence.barChart(n);
+  //sequence.display(n);
 }
