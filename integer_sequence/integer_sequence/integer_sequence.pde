@@ -6,7 +6,7 @@ void setup() {
   size(720, 640);
   colorMode(HSB,360,100,100,100);
   // Object init
-  sequence = new Abundant();
+  sequence = new Composite();
   //println(sequence.);
 }
 
